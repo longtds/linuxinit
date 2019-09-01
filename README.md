@@ -1,0 +1,2 @@
+# linuxinit
+init linux
