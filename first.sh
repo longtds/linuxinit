@@ -1,3 +1,4 @@
+#!/bin/bash
 # 系统升级和常用软件安装
 yum makecache
 yum update -y
