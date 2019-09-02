@@ -22,3 +22,5 @@ Protocol 2
 EOF
 
 systemctl restart sshd
+# 如果关闭密码登录，强制使用密钥登录可以添加如下选项：
+# PasswordAuthentication no

@@ -7,7 +7,7 @@ if [ $# <2 ];then
 user = $1
 passwd = $2
 
-
+# 创建系统默认用户，赋予sudo权限，仅允许这个用户进行远程ssh登录
 # 创建用户
 useradd $user
 echo $passwd | passwd --stdin $user
