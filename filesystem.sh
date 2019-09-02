@@ -16,3 +16,7 @@ chmod +x /usr/local/bin/check_file.sh
 
 # 每天2:00进行文件检查
 echo "0 2 * * * root /usr/local/bin/check_file.sh >>/usr/share/check_file.log"
+
+# 取消临时目录执行权限
+chmod -x -R /tmp
+chmod -x -R /var/tmp
