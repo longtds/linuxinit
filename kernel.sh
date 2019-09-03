@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# 内核升级
+# 内核升级需要依照实际需求使用，目前需要的地方是为了更好支持容器或者其他情况
+
 # 导入公钥
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 # 安装内核源

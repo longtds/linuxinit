@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# 关闭firewalld和selinux
+# 在云环境中，云平台有可靠的安全措施，为了方便使用一般都是关闭firewalld和selinux，
+# 但是有必要开启TCP_wrappers防火墙，仅允许内部网络
+# 处于应用边缘节点还是需要开启firewalld和selinux服务
+
 systemctl stop firewalld
 systemctl disable firewalld
 setenforce 0

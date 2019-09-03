@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# shell命令记录
+# shell命令历史记录，记录了用户登录ip、时间和操作，统一保存在/usr/share/.history下
+
 cat <<EOF >>/etc/profile
 `echo`
 USER_IP=\`who -u am i 2>/dev/null |awk '{print \$NF}'|sed -e 's/[()]//g'\`

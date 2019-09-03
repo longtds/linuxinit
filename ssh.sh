@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# SSH配置
+# SSH配置主要是添加了关于安全方面的考虑，比如不允许root用户远程登录，修改ssh端口等
+
 cat <<EOF >>/etc/ssh/sshd_config
 # 禁止root用户ssh登录
 PermitRootLogin no

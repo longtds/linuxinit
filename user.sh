@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 生产环境中我们不能使用root用户远程登录，只能使用普通用户
+
 if [ $# <2 ];then
     echo "eg: user.sh user passwd"
     exit 1
