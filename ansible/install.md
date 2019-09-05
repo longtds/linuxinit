@@ -13,5 +13,4 @@
     # ssh的时候不会提示是否保存key
     ssh-keyscan remote_servers >> ~/.ssh/known_hosts
     # 对于有公钥单已关闭密码认证的主机
-    scp -i /opt/default.pem id_rsa.pub centos@10.10.100.43:~/.ssh/authorized
-_keys
+    scp -i /opt/default.pem id_rsa.pub centos@10.10.100.43:~/.ssh/authorized_keys
